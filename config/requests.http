@@ -1,0 +1,31 @@
+
+### Books Index
+GET http://localhost:3000/books.json 
+
+### Books Create
+POST http://localhost:3000/books.json
+Content-Type: application/json
+
+{
+  "name": "test name",
+  "year": "test year",
+  "author": "test author",
+  "description": "test description"
+}
+
+### Books Show
+GET http://localhost:3000/books/1.json
+
+### Books Update
+PATCH  http://localhost:3000/books/6.json
+Content-Type: application/json
+
+{
+  "name": "house rules",
+  "year": "2012",
+  "author": "Jodi picoult",
+  "description": "autistic boy saves sibling from harm"
+}
+
+### Books Destroy
+DELETE http://localhost:3000/books/5.json
